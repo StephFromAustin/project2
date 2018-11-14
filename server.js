@@ -15,3 +15,10 @@ app.use(express.static("public")); // static directory
 // ROUTES
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+
+// STARTING SERVER 
+db.sequelize.sync(syncOptions).then(function {
+    app.listen(PORT, function(){
+        console.log("The app is listening on" + PORT);
+    });
+});
