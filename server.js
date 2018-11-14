@@ -22,3 +22,5 @@ db.sequelize.sync(syncOptions).then(function {
         console.log("The app is listening on" + PORT);
     });
 });
+
+module.exports = app;
