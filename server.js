@@ -16,10 +16,10 @@ app.use(express.static("public")); // static directory
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-// STARTING SERVER 
+// STARTING SERVER || LISTEN TO CLIENT REQUEST || NOTIFY IF LISTENING
 db.sequelize.sync(syncOptions).then(function (){
     app.listen(PORT, function(){
-        console.log("The app is listening on" + PORT);
+        console.log("The app is listening on: http//localhost:" + PORT);
     });
 });
 
