@@ -11,3 +11,7 @@ const PORT = process.env.PORT || 8080; // PORT
 app.use(express.urlencoded({ extended:false })); // parse application 
 app.use(express.json()); // parse application/ json
 app.use(express.static("public")); // static directory 
+
+// ROUTES
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
