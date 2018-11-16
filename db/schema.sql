@@ -8,8 +8,9 @@ CREATE DATABASE project2_db;
 USE project2_db;
 
 CREATE TABLE registry
-
+(
 	id INT NOT NULL AUTO_INCREMENT,
 	item VARCHAR(100) NOT NULL,
 	quantity INT NOT NULL,
 	PRIMARY KEY (id)
+);
