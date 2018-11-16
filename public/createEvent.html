@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ShinDig</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+</head>
+
+<body id="home" class="scrollspy">
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav class="blue-grey darken-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">ShinDig</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#myEvents">My Events</a>
+                        </li>
+                        <li>
+                            <a href="#create">Create</a>
+                        </li>
+                        <li>
+                            <a href="#find">Find</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="./index.html">Home</a>
+        </li>
+        <li>
+            <a href="#myEvents">My Events</a>
+        </li>
+        <li>
+            <a href="#create">Create</a>
+        </li>
+        <li>
+            <a href="#find">Find</a>
+        </li>
+    </ul>
+    <!--Slider-->
+    <section class="slider">
+        <ul class="slides">
+            <li>
+                <img src="images/img5.jpg">
+                <!-- random image -->
+                <div class="caption center-align">
+                    <h2></h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only"></h5>
+                </div>
+            </li>
+            <li>
+                <img src="images/img8.jpg">
+                <!-- random image -->
+                <div class="caption left-align">
+                    <h2></h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only"></h5>
+                </div>
+            </li>
+            <li>
+                <img src="images/img4.jpg">
+                <!-- random image -->
+                <div class="caption right-align">
+                    <h2></h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only"></h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <hr>
+    <!-- USER INFO-->
+    <section>
+        <div class="row">
+            <div class="col s12 m4 l2 center">
+                <div class="chip blue-grey lighten-3">
+                    <img src="images/img6.jpg" alt="Contact Person pulse">
+                    Jane Doe
+                    <div class="input-field">
+                        <input placeholder="Event Name" id="first_name" type="text" class="validate">
+
+                    </div>
+                    <input type="text" class="datepicker" placeholder="Select Date">
+                    <button class="btn waves-effect waves-light blue-grey darken-2" type="submit" name="action">Create
+                        Event
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+                <!-- Promo Content 1 goes here -->
+            </div>
+         </div>
+    </section>
+    <!--Party Details-->
+    <!--Parallax-->
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/img7.jpg"></div>
+        <h2 class= "center"> Plan Your Next Event With ShinDig</h2>
+      </div>
+
+    <!--Footer-->
+    <footer class="page-footer blue-grey darken-2">
+        <div class="footer-copyright">
+          <div class="container">
+          © 2018 Copyright ShinDig
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        // Slider
+        const slider = document.querySelector('.slider');
+        M.Slider.init(slider, {
+            indicators: false,
+            height: 200,
+            transition: 500,
+            interval: 3000
+        });
+        ///date picker
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelector('.datepicker');
+            var instances = M.Datepicker.init(elems, {});
+        });
+///parallax
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelector('.parallax');
+        var instances = M.Parallax.init(elems, {});
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
