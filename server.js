@@ -1,5 +1,5 @@
 // DEPENDENCIES 
-require ("dotenv").config(); //.env
+//require ("dotenv").config(); //.env
 const express = require("express"); //express  
 // const exphbs = require("express-handlebars"); //handlebars
     // SETS UP THE EXPRESS APP 
@@ -13,11 +13,11 @@ app.use(express.json()); // parse application/ json
 app.use(express.static("public")); // static directory 
 
 // ROUTES
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+//require("./routes/apiRoutes")(app);
+//require("./routes/htmlRoutes")(app);
 
 // STARTING SERVER || LISTEN TO CLIENT REQUEST || NOTIFY IF LISTENING
-db.sequelize.sync(syncOptions).then(function (){
+db.sequelize.sync().then(function (){
     app.listen(PORT, function(){
         console.log("The app is listening on: http//localhost:" + PORT);
     });
