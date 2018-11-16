@@ -24,3 +24,5 @@ db.sequelize.sync().then(function (){
 });
 
 module.exports = app;
+
+// this is a test for github
