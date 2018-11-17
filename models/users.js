@@ -2,13 +2,13 @@ module.exports = function (sequelize, Sequelize) {
     var users = sequelize.define("users", {
         item: {
             type: Sequelize.STRING, 
-            validae: {
+            validate: {
                 isAlphanumeric: true, 
             }
         }, 
         quantity: {
             type: Sequelize.INTEGER, 
-            validae: {
+            validate: {
                 isAlphanumeric: true, 
             }
         },
