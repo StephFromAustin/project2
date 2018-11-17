@@ -14,9 +14,6 @@ CREATE TABLE registry(
 	PRIMARY KEY (id)
 );
 
--- Use the "project2" database --
-USE project2_db;
-
 
 -- Creates the "guest" table --
 CREATE TABLE guest (
@@ -27,8 +24,6 @@ CREATE TABLE guest (
 	PRIMARY KEY (id)
 	);
 
--- Use the "project2" database --
-USE project2_db;
 
 -- Creates the "main_event" table --
 CREATE TABLE main_event (
@@ -38,3 +33,12 @@ CREATE TABLE main_event (
 	event_time TIME NOT NULL,
 	PRIMARY KEY (id)
 	);
+
+-- CRATES THE "USERS" TABLE -- 
+CREATE TABLE users (
+    fb_id INT NOT NULL, 
+    user_name VARCHAR (255) NOT NULL, 
+    user_email VARCHAR (255) NOT NULL, 
+    user_phone INT NOT NULL, 
+    PRIMARY KEY (fb_id)
+    );
