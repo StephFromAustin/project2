@@ -1,79 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <link href="//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-        <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/happily-colored-snlogo/128/medium.png">
-	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Login!</title>
-    </head>
 
-    <body>
-		<div class="loginContainer">
-        <nav class="blue-grey darken-2">
-	        <div class="nav-wrapper">
-		        <a href="#!" class="brand-logo center">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!--JQuery-->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+	<!--Materialize-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" id="bootstrap-css">
+	<!--Icon Finder-->
+	<link rel="icon" href="https://cdn3.iconfinder.com/data/icons/happily-colored-snlogo/128/medium.png">
+	<!--Google Fonts-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Custom Stylesheet-->
+	<link rel="stylesheet" href="style.css">
+	<title>Login!</title>
+</head>
+
+<body>
+	<!--Header Nav Bar-->
+	<div class="loginContainer">
+		<nav class="blue-grey darken-2">
+			<div class="nav-wrapper">
+				<a href="#!" class="brand-logo center">
 					<img src="images/shindigLogo.png">
 				</a>
-		        <a href="#" data-activates="mobile-demo" class="button-collapse">
+				<a href="#" data-activates="mobile-demo" class="button-collapse">
 					<i class="material-icons">menu</i>
 				</a>
-		    </div>
-        </nav>
-          
-	    <div class="had-container">
-	        <div class="parallax-container logo">
+			</div>
+		</nav>
+		<!--Login Form-->
+		<div class="had-container">
+			<div class="parallax-container logo">
 				<div class="parallax">
 					<img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0a2d43a440904f159f33303eaea9c2e5&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb">
 				</div>
-      	    	<div class="row"><br>
-      		    	<div class="col m8 s8 offset-m2 offset-s2 center">
-      			    	<h4 class="truncate bg-card-user">
-      				    	<img src="images/shindigLargeLogo.png" alt="" class="brand-logo center">
-					    	<div class="row login">
-					  	    	<h4>Login</h4>
-					        	<form class="col s12">
-					        	<div class="row">
-					            	<div class="input-field col m12 s12">
-					                	<i class="material-icons iconis prefix">account_box</i>
-					                	<input id="icon_prefix" type="text" class="validate">
-					                	<label for="icon_prefix"></label>
-					            	</div>
-					        	</div>
-					        	<div class="row">
-					            	<div class="input-field col m12 s12">
-					                	<i class="material-icons iconis prefix">enhanced_encryption</i>
-					                	<input id="password" type="password" class="validate">
-					                	<label for="password"></label>
-					            	</div>
-					        	</div>
-					        	<div class="row">
-					      	    	<button class="btn waves-effect waves-light" type="submit" name="action">Login</button>
-					        	</div>
-					        	</form>
-					    	</div>
-      			    	</h4>
-		   	    	</div>
-	    		</div>
-	        </div>
-        </div>
-
-        <footer class="page-footer blue-grey darken-2">
-            <div class="footer-copyright">
-                <div class="container center">
-        	        Copyright © 2018
-                </div>
-            </div>
-        </footer>
-
-    	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		<script src="login.js"></script>
+				<div class="row"><br>
+					<div class="col m8 s8 offset-m2 offset-s2 center">
+						<h4 class="truncate bg-card-user">
+							<img src="images/shindigLargeLogo.png" alt="" class="brand-logo center">
+							<div class="row login">
+								<h4>Login</h4>
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col m12 s12">
+											<i class="material-icons iconis prefix">account_box</i>
+											<input id="icon_prefix email-input" type="text" class="validate">
+											<label for="icon_prefix"></label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col m12 s12">
+											<i class="material-icons iconis prefix">enhanced_encryption</i>
+											<input id="password password-input" type="password" class="validate">
+											<label for="password"></label>
+										</div>
+									</div>
+									<div class="row">
+										<button class="btn waves-effect waves-light login-btn" type="submit" name="action">Login</button>
+									</div>
+								</form>
+							</div>
+						</h4>
+					</div>
+				</div>
+			</div>
 		</div>
-    </body>
+		<!--Footer-->
+		<footer class="page-footer blue-grey darken-2">
+			<div class="footer-copyright">
+				<div class="container center">
+					Copyright © 2018
+				</div>
+			</div>
+		</footer>
+		<!--Scripts-->
+
+		<!--Materialize JS-->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<!--Login Javascript file-->
+		<script src="login.js"></script>
+	</div>
+</body>
+
 </html>
+<!--Sorry, you gotta restylize this to be centered and whatnot. Cleaned up the code to not be repetitive and added notes-->
+<!--Edit header to not have a menu button since you dont want the user to navigate to other pages when loging in.
+Unless you do, then add the navigation pieces needed to use the menu button. line 31-32-->
+<!--Be sure to link to the home page with the logo. Line 28-->
+<!--Suggest adding placeholders for the login fields so that users know what format to input. i.e. "e-mail@provider.com"
+"password is at least 8 characters"-->
