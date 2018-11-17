@@ -1,5 +1,5 @@
 module.exports = function (sequelize, Sequelize) {
-    var events = sequelize.define("registry", {
+    var tasks = sequelize.define("registry", {
         item: {
             type: Sequelize.STRING,
             validate: {
@@ -13,5 +13,5 @@ module.exports = function (sequelize, Sequelize) {
             }
         },
     });
-    return events;
+    return tasks;
 };
