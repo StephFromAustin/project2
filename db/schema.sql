@@ -7,7 +7,8 @@ CREATE DATABASE project2_db;
 -- Use the "project2" database --
 USE project2_db;
 
-CREATE TABLE registry(
+-- CRATE THE "REGISTRY/ TASKS" TABLE --
+CREATE TABLE registry (
 	id INT NOT NULL AUTO_INCREMENT,
 	item VARCHAR(100) NOT NULL,
 	quantity INT NOT NULL,
