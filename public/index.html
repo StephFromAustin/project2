@@ -1,0 +1,139 @@
+<!-- THIS PAGE GENERATES AFTER THE LOGIN PAGE -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ShinDig</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="html" href="/createEvent.html">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body id="home" class="scrollspy">
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav class="blue-grey darken-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">ShinDig</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#myEvents">My Events</a>
+                        </li>
+                        <li>
+                            <a href="./createEvent.html">Create</a>
+                        </li>
+                        <li>
+                            <a href="#find">Find</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#myEvents">My Events</a>
+        </li>
+        <li>
+            <a href="./createEvent.html">Create</a>
+        </li>
+        <li>
+            <a href="#find">Find</a>
+        </li>
+    </ul>
+    <header class="slider">
+        <div class="container2">
+            <div class="split left">
+                <h1>Create Event</h1>
+                <a href="./createEvent.html" class="button"> Create </a>
+            </div>
+            <div class="split right">
+                <h1 class = "demo"><p class="line-1 anim-typewriter">I need . . .</p></h1>
+                <a href="#" class="button"> Find </a>
+            </div>
+    </header>
+
+    <section class="services">
+        <div class="container grid-3 center">
+            <div>
+                <i class="fas fa-calendar fa-3x"></i>
+                <h3>Events Created</h3>
+                <p></p>
+            </div>
+            <div>
+                <i class="fas fa-hands-helping fa-3x"></i>
+                <h3>Helpful Tips</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
+            </div>
+            <div>
+                <i class="fas fa-building fa-3x"></i>
+                <h3>Hosting Facilities</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about bg-light">
+        <div class="container">
+            <div class="grid-2">
+                <div class="center">
+                    <i class=""></i>
+                </div>
+                <div>
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eos aperiam labore consectetur
+                        maiores ea magni exercitationem
+                        similique laborum sed, unde, autem vel iure doloribus aliquid. Aspernatur explicabo consectetur
+                        consequatur non
+                        nesciunt debitis quos alias soluta, ratione, ipsa officia reiciendis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--Footer-->
+    <footer class="page-footer blue-grey darken-2 footer-copyright">
+
+
+        <div class="container">
+            © 2018 Copyright ShinDig
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <script src="main.js"></script>
+    <script>
+        // ScrollSpy
+        const ss = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(ss, {});
+        //sidenav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+    </script>
+</body>
+
+</html>
