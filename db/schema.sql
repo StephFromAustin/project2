@@ -7,12 +7,19 @@ CREATE DATABASE project2_db;
 -- Use the "project2" database --
 USE project2_db;
 
+-- Creates the "registry" table --
+CREATE TABLE registry
+
 -- CRATE THE "REGISTRY/ TASKS" TABLE --
 CREATE TABLE registry (
 	id INT NOT NULL AUTO_INCREMENT,
-	item VARCHAR(100) NOT NULL,
+	item VARCHAR(255) NOT NULL,
 	quantity INT NOT NULL,
 	PRIMARY KEY (id)
+
+-- Creates the "guest" table --
+CREATE TABLE guest
+
 );
 
 
@@ -23,6 +30,10 @@ CREATE TABLE guest (
 	email VARCHAR(255) NOT NULL,
 	phone_number VARCHAR(10) NOT NULL,
 	PRIMARY KEY (id)
+
+-- Creates the "main_event" table --
+CREATE TABLE main_event
+
 	);
 
 
@@ -32,6 +43,7 @@ CREATE TABLE main_event (
 	event_name VARCHAR(255) NOT NULL,
 	event_date DATE NOT NULL,
 	event_time TIME NOT NULL,
+	PRIMARY KEY (id)
 	PRIMARY KEY (id)
 	);
 
