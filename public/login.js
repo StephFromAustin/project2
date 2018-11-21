@@ -40,7 +40,7 @@ const signIn = () => {
                 alert("Email password combination incorrect.");
                 return;
             }else if(errorCode)
-        )
+        })
 }
 
 //On click button events
