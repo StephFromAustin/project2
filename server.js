@@ -13,8 +13,8 @@ app.use(express.json()); // parse application/ json
 app.use(express.static("public")); // static directory 
 
 // ROUTES (will need later, gators)
-//require("./routes/apiRoutes")(app);
-//require("./routes/htmlRoutes")(app);
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 // STARTING SERVER || LISTEN TO CLIENT REQUEST || NOTIFY IF LISTENING
 db.sequelize.sync().then(function (){
