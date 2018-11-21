@@ -1,5 +1,5 @@
-var mysql = require("mysql");
-var connection; 
+const mysql = require("mysql");
+let connection; 
 
 // JAWSDB CONNECTION 
 if (process.env.JAWSDB_URL) {
@@ -13,13 +13,6 @@ if (process.env.JAWSDB_URL) {
   });
 };
 
-// var connection = mysql.createConnection({
-//   host: "localhost",
-//   port: 3306,
-//   user: "root",
-//   password: "Steph2845",
-//   database: "project2_db"
-// });
 
 connection.connect(function(err) {
   if (err) {
