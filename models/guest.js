@@ -1,8 +1,12 @@
 //Setup for "registry" table
 module.exports = function (sequelize, Sequelize) {
+<<<<<<< HEAD:models/events.js
     var list = sequelize.define("registry", {
 
         //Item column set to only accept alphanumeric
+=======
+    var guest = sequelize.define("guest", {
+>>>>>>> 2c50f48b6f57308c21aef0c6e2067703d36715dd:models/guest.js
         item: {
             type: Sequelize.STRING,
             validate: {
@@ -17,6 +21,7 @@ module.exports = function (sequelize, Sequelize) {
             }
         },
     });
+<<<<<<< HEAD:models/events.js
     return list;
 };
 
@@ -78,4 +83,7 @@ module.exports = function (sequelize, Sequelize) {
         }, 
     });
     return events;
+=======
+    return guest;
+>>>>>>> 2c50f48b6f57308c21aef0c6e2067703d36715dd:models/guest.js
 };
