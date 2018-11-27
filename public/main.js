@@ -29,4 +29,23 @@ $(document).ready(function () {
     container.classList.remove("hover-right");
   });
 //======================================================================================================================
-})
+// Javascript for visualization when user first signs in
+const user = require("login.js");
+
+let uid = user.currentuid;
+let email = user.currentUserEmail;
+
+
+//Javascript for visualization of data from the database
+//======================================================================================================================
+// for creating an event from the create event page
+// the events name input
+let eventName = $(".validate");
+//the date picked for the event
+let eventDate = $(".datepicker");
+
+//event listener for the button click
+$(document).on("click", ".createBtn", createEvent);
+
+
+});

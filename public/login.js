@@ -126,5 +126,5 @@ $(document).ready(function () {
     $(".signUp-btn").on("click", signUp);
     $(".resetPass").on("click", passReset);
 
-    module.exports();
+    module.exports(currentuid, currentUserEmail);
 })
