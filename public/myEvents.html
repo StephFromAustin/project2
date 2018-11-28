@@ -4,17 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ShinDig</title>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!--Google Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
+    <!--Materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!--Custom Style Sheet-->
     <link rel="stylesheet" href="style.css">
-    <link rel="html" href="/createEvent.html">
+    <!--Font Awesome-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
         crossorigin="anonymous"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>ShinDig</title>
 </head>
 
 <body id="home" class="scrollspy">
@@ -62,37 +66,37 @@
     <!-- Card for my events-->
     <div class="row">
         <div class="col s12 m3">
-                <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="./images/img9.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator grey-text text-darken-4">My Events<i class="material-icons right">more_vert</i></span>
-                          <p><a href="./index.html">Home</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">My Events<i class="material-icons right">close</i></span>
-                          <p></p>
-                        </div>
-                      </div>
-            
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./images/img9.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">My Events<i class="material-icons right">more_vert</i></span>
+                    <p><a href="./index.html">Home</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">My Events<i class="material-icons right">close</i></span>
+                    <p></p>
+                </div>
+            </div>
+
         </div>
     </div>
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--Footer-->
     <footer class="page-footer blue-grey darken-2 footer-copyright">
         <div class="container">
@@ -102,17 +106,12 @@
     </footer>
 
 
-
+    <!--Materialize Javascript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-
-    <script>
-        // ScrollSpy
-        const ss = document.querySelectorAll('.scrollspy');
-        M.ScrollSpy.init(ss, {});
-        //sidenav
-        const sideNav = document.querySelector('.sidenav');
-        M.Sidenav.init(sideNav, {});
-    </script>
+    <!--Custom Javascript-->
+    <script src="main.js"></script>
+    <!--Login Javascript file-->
+    <script src="login.js"></script>
 </body>
 
 </html>
