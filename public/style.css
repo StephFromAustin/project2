@@ -192,7 +192,7 @@ body {
 }
 
 .bg-card-user {
-    margin-top: 40px;
+  margin-top: -10px;
 	padding: 15px 0;
 }
 .truncate >img {
@@ -207,15 +207,104 @@ footer .foot-text {
 
 
 .logo {
-    height: 650px!important;
+    height: 650px;
 }
 i.iconis {
-    font-size: 1em!important;
+    font-size: 1em;
     margin-top: 8px;
 }
 .login {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto center;
     background-color: rgba(255,255,255,.7); 
     padding: 20px;
+}
+
+.row.login{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+::placeholder{
+  color: black;
+  opacity: .5;
+}
+
+/*About Us*/
+* {
+  box-sizing: border-box;
+  color: #333;
+}
+
+.section {
+  position: relative;
+  width: 900px;
+  max-width: 80%;
+  border: 2px solid #333;
+  border-top: none;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.section h1 {
+  position: relative;
+  margin-top: -10px;
+  display: inline-block;
+  letter-spacing: 4px;
+  margin-right: 600px;
+  color: black;
+  text-align: center;
+}
+
+.top-border{
+  position: absolute;
+  margin-top: -15px;
+  height: 2px;
+  width: 24%;
+  background-color: #333;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+@media (max-width: 685px) {
+.top-border {	
+  width: 18%;
+	}
+}
+
+.section p {
+  width: 61%;
+  margin: 20px auto 40px auto;
+  line-height: 30px;
+}
+
+.section a {
+  outline: 0;
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 40px;
+  width: 440px;
+  max-width: 80%;
+  background-color: #333;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 500px) {
+  .top-border {	
+    display: none;
+  }
+  .section {
+  border-top: 2px solid #333;
+  }
+  .section h1 {
+    margin: 20px 6px;
+  }
 }

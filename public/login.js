@@ -126,5 +126,14 @@ $(document).ready(function () {
     $(".signUp-btn").on("click", signUp);
     $(".resetPass").on("click", passReset);
 
+<<<<<<< HEAD
+module.exports();
+});
+
+
+
+$('input#input_text, textarea#textarea2').characterCounter();
+=======
     module.exports(currentuid, currentUserEmail);
 })
+>>>>>>> 88d702356a8598795917232870a824f6e0d1ca2d
