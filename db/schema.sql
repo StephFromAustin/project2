@@ -10,7 +10,7 @@ USE project2_db;
 -- CRATE THE "REGISTRY/ TASKS" TABLE --
 CREATE TABLE registry (
 	id INT NOT NULL AUTO_INCREMENT,
-	item VARCHAR(100) NOT NULL,
+	item VARCHAR(255) NOT NULL,
 	quantity INT NOT NULL,
 	PRIMARY KEY (id)
 );
@@ -32,6 +32,7 @@ CREATE TABLE main_event (
 	event_name VARCHAR(255) NOT NULL,
 	event_date DATE NOT NULL,
 	event_time TIME NOT NULL,
+	PRIMARY KEY (id)
 	PRIMARY KEY (id)
 	);
 
