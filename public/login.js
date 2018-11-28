@@ -47,4 +47,8 @@ const signIn = () => {
 $(".login-btn").on("click", signIn);
 
 module.exports();
-})
+});
+
+
+
+$('input#input_text, textarea#textarea2').characterCounter();
