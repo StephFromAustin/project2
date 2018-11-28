@@ -1,6 +1,8 @@
 // DEPENDENCIES 
     // DOTENV
 require("dotenv").config();
+    // KEYS
+let keys = require("./keys.js");
     // EXPRESS 
 const express = require("express"); 
     // SETS UP THE EXPRESS APP 
