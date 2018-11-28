@@ -8,6 +8,7 @@ const db = require("./models");       // REQUIRES MODELS FOR SYNCING
 const app = express();
     // PORT
 const PORT = process.env.PORT || 8080; 
+    // REQUIRED REQUESTS 
 
 // MIDDLEWARE
 app.use(express.urlencoded({ extended:false })); // parse application 
