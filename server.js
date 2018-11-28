@@ -11,6 +11,9 @@ const app = express();
     // PORT
 const PORT = process.env.PORT || 8080; 
     // REQUIRED REQUESTS 
+// let request = require('request');
+// let maps = require ('maps');
+// let calander = require ('calander');
 
 // MIDDLEWARE
 app.use(express.urlencoded({ extended:false })); // parse application 
@@ -30,5 +33,3 @@ db.sequelize.sync().then(function (){
 
 module.exports = app;
 
-// this is a test for github
-// i am adding stuff to git this branch should no longer say it's clean 
