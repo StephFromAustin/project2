@@ -31,3 +31,4 @@ db.sequelize.sync().then(function (){
 module.exports = app;
 
 // this is a test for github
+// i am adding stuff to git this branch should no longer say it's clean 
