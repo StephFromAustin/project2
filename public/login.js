@@ -118,7 +118,7 @@ $(document).ready(function () {
     }
 })
 
-}
+});
     
 
 // Code for future development to let the user update their profile information
