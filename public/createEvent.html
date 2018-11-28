@@ -1,20 +1,22 @@
+<!-- THIS PAGE GENERATES AFTER YOU HIT THE CREATE EVENT BUTTON -->
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ShinDig</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>ShinDig</title>
 
 </head>
 
@@ -100,37 +102,52 @@
                     Jane Doe
                     <div class="input-field">
                         <input placeholder="Event Name" id="first_name" type="text" class="validate">
+<<<<<<< HEAD
                         <input type="text" class="datepicker" placeholder="Select Date">
                         <input type = "text" class = "timepicker" placeholder ="Select Time">
                         </div> 
                     <!--- javescript,or firebase collection after creation-->
                     <button class="btn waves-effect waves-light blue-grey darken-2 createEvent" type="submit" name="action">Create
+=======
+
+                    </div>
+                    <input type="text" class="datepicker" placeholder="Select Date">
+                    <button class="btn waves-effect waves-light blue-grey darken-2 createBtn" type="submit" name="action">Create
+>>>>>>> 88d702356a8598795917232870a824f6e0d1ca2d
                         Event
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
             </div>
-         </div>
+        </div>
     </section>
     
     <!--Parallax-->
     <div class="parallax-container">
         <div class="parallax"><img src="images/img7.jpg"></div>
-        <h2 class= "center"> Plan Your Next Event With ShinDig</h2>
-      </div>
+        <h2 class="center"> Plan Your Next Event With ShinDig</h2>
+    </div>
 
     <!--Footer-->
     <footer class="page-footer blue-grey darken-2">
         <div class="footer-copyright">
+<<<<<<< HEAD
           <div class="container">
           © 2018 Copyright ShinDig
           <a class="grey-text text-lighten-4 right" href="#!"></a>
           </div>
+=======
+            <div class="container">
+                © 2018 Copyright ShinDig
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+>>>>>>> 88d702356a8598795917232870a824f6e0d1ca2d
         </div>
-      </footer>
-   
+    </footer>
 
+    <!--Materialize JS file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<<<<<<< HEAD
     <script>
         const sideNav = document.querySelector('.sidenav');
         M.Sidenav.init(sideNav, {});
@@ -161,6 +178,17 @@
 
 
 
+=======
+    <!--Font Awesome JS file-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <!--JS for navigation and parallax scrolling-->
+    <script src="createEvent.js"></script>
+    <!--Login Javascript file-->
+    <script src="login.js"></script>
+>>>>>>> 88d702356a8598795917232870a824f6e0d1ca2d
 </body>
 
 </html>
+<!--Some of the same notes for the navbar and footer in the home page also apply here-->
+<!--Maybe center the input form to create the event on the page. Other than that not much needs to be changed-->

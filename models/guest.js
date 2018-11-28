@@ -1,11 +1,13 @@
+//Setup for "registry" table
 module.exports = function (sequelize, Sequelize) {
-    var events = sequelize.define("registry", {
+    var guest = sequelize.define("guest", {
         item: {
             type: Sequelize.STRING,
             validate: {
                 isAlphanumeric: true,
             }
         },
+        //Quantity column set to only accept alphanumeric
         quantity: {
             type: Sequelize.INTEGER,
             validate: {
@@ -13,5 +15,5 @@ module.exports = function (sequelize, Sequelize) {
             }
         },
     });
-    return events;
+    return guest;
 };
