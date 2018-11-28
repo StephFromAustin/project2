@@ -102,26 +102,30 @@
                     Jane Doe
                     <div class="input-field">
                         <input placeholder="Event Name" id="first_name" type="text" class="validate">
-<<<<<<< HEAD
                         <input type="text" class="datepicker" placeholder="Select Date">
-                        <input type = "text" class = "timepicker" placeholder ="Select Time">
-                        </div> 
-                    <!--- javescript,or firebase collection after creation-->
-                    <button class="btn waves-effect waves-light blue-grey darken-2 createEvent" type="submit" name="action">Create
-=======
-
+                        <input type="text" class="timepicker" placeholder="Select Time">
                     </div>
-                    <input type="text" class="datepicker" placeholder="Select Date">
-                    <button class="btn waves-effect waves-light blue-grey darken-2 createBtn" type="submit" name="action">Create
->>>>>>> 88d702356a8598795917232870a824f6e0d1ca2d
-                        Event
-                        <i class="material-icons right">send</i>
-                    </button>
+                    <!--- javescript,or firebase collection after creation-->
+                   
+                    <!-- Modal Trigger -->
+                    <a class="btn waves-effect waves-light blue-grey darken-2 waves-effect waves-light btn modal-trigger" href="#modal1">Create Event 
+                    <i class="material-icons right">send</i></a>
+
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Modal Header</h4>
+                            <p>A bunch of text</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!--Parallax-->
     <div class="parallax-container">
         <div class="parallax"><img src="images/img7.jpg"></div>
@@ -131,23 +135,15 @@
     <!--Footer-->
     <footer class="page-footer blue-grey darken-2">
         <div class="footer-copyright">
-<<<<<<< HEAD
-          <div class="container">
-          © 2018 Copyright ShinDig
-          <a class="grey-text text-lighten-4 right" href="#!"></a>
-          </div>
-=======
             <div class="container">
                 © 2018 Copyright ShinDig
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
             </div>
->>>>>>> 88d702356a8598795917232870a824f6e0d1ca2d
         </div>
     </footer>
 
     <!--Materialize JS file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-<<<<<<< HEAD
     <script>
         const sideNav = document.querySelector('.sidenav');
         M.Sidenav.init(sideNav, {});
@@ -165,28 +161,24 @@
             var elems = document.querySelector('.datepicker');
             var instances = M.Datepicker.init(elems, {});
         });
-///parallax
-        document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelector('.parallax');
-        var instances = M.Parallax.init(elems, {});
+        ///parallax
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelector('.parallax');
+            var instances = M.Parallax.init(elems, {});
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, {});
         });
     </script>
     <script>
-         let createEvent
+        let createEvent
     </script>
 
 
 
 
-=======
-    <!--Font Awesome JS file-->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
-        crossorigin="anonymous"></script>
-    <!--JS for navigation and parallax scrolling-->
-    <script src="createEvent.js"></script>
-    <!--Login Javascript file-->
-    <script src="login.js"></script>
->>>>>>> 88d702356a8598795917232870a824f6e0d1ca2d
 </body>
 
 </html>
