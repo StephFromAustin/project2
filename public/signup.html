@@ -18,7 +18,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Custom Stylesheet-->
 	<link rel="stylesheet" href="style.css">
-	<title>Login!</title>
+	<title>Sign Up!</title>
 </head>
 
 <body>
@@ -26,11 +26,8 @@
 	<div class="loginContainer">
 		<nav class="blue-grey darken-2">
 			<div class="nav-wrapper">
-				<a href="#!" class="brand-logo center">
+				<a href="index.html" class="brand-logo center">
 					<img src="images/shindigLogo.png">
-				</a>
-				<a href="#" data-activates="mobile-demo" class="button-collapse">
-					<i class="material-icons">menu</i>
 				</a>
 			</div>
 		</nav>
@@ -45,26 +42,33 @@
 						<h4 class="truncate bg-card-user">
 							<img src="images/shindigLargeLogo.png" alt="" class="brand-logo center">
 							<div class="row login">
-								<h4>Login</h4>
+								<h4>Sign Up</h4>
 								<form class="col s12">
 									<div class="row">
 										<div class="input-field col m12 s12">
 											<i class="material-icons iconis prefix">account_box</i>
-											<input id="icon_prefix email-input" type="text" class="validate">
+											<input id="icon_prefix" type="text" class="validate" placeholder="First and Last Name">
 											<label for="icon_prefix"></label>
 										</div>
 									</div>
 									<div class="row">
 										<div class="input-field col m12 s12">
+											<i class="material-icons iconis prefix">email</i>
+											<input id="email" type="text" class="validate" placeholder="Email">
+											<label for="email"></label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col m12 s12">
 											<i class="material-icons iconis prefix">enhanced_encryption</i>
-											<input id="password password-input" type="password" class="validate">
+											<input id="password" type="password" class="validate" placeholder="Password">
 											<label for="password"></label>
 										</div>
 									</div>
 									<div class="row">
-										<button class="btn waves-effect waves-light login-btn" type="submit" name="action">Login</button>
+										  <button class="btn waves-effect waves-light" type="submit" name="action">Sign Up</button>
 									</div>
-								</form>
+								  </form>
 							</div>
 						</h4>
 					</div>
@@ -89,9 +93,6 @@
 </body>
 
 </html>
-<!--Sorry, you gotta restylize this to be centered and whatnot. Cleaned up the code to not be repetitive and added notes-->
 <!--Edit header to not have a menu button since you dont want the user to navigate to other pages when loging in.
 Unless you do, then add the navigation pieces needed to use the menu button. line 31-32-->
 <!--Be sure to link to the home page with the logo. Line 28-->
-<!--Suggest adding placeholders for the login fields so that users know what format to input. i.e. "e-mail@provider.com"
-"password is at least 8 characters"-->
