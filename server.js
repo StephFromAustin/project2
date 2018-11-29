@@ -1,11 +1,19 @@
 // DEPENDENCIES 
-//require ("dotenv").config(); //.env
-const express = require("express"); //express  
-
+    // DOTENV
+require("dotenv").config();
+    // KEYS
+let keys = require("./keys.js");
+    // EXPRESS 
+const express = require("express"); 
     // SETS UP THE EXPRESS APP 
-const db = require("./models"); // requires models for syncing 
+const db = require("./models");       // REQUIRES MODELS FOR SYNCING
 const app = express();
-const PORT = process.env.PORT || 8080; // PORT
+    // PORT
+const PORT = process.env.PORT || 8080; 
+    // REQUIRED REQUESTS 
+// let request = require('request');
+// let maps = require ('maps');
+// let calander = require ('calander');
 
 // MIDDLEWARE
 app.use(express.urlencoded({ extended:false })); // parse application 
@@ -25,4 +33,3 @@ db.sequelize.sync().then(function (){
 
 module.exports = app;
 
-// this is a test for github
