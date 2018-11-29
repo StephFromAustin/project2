@@ -12,9 +12,9 @@ app.use(express.urlencoded({ extended:false })); // parse application
 app.use(express.json()); // parse application/ json
 app.use(express.static("public")); // static directory 
 
-// ROUTES (will need later, gators)
-//require("./routes/apiRoutes")(app);
-//require("./routes/htmlRoutes")(app);
+// ROUTES
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 // STARTING SERVER || LISTEN TO CLIENT REQUEST || NOTIFY IF LISTENING
 db.sequelize.sync().then(function (){
