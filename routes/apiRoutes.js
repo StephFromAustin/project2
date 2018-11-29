@@ -1,9 +1,11 @@
 // Dependencies
 const db = require('../models')
 
+
 // Routes
 module.exports = function (app) {
 
+    // ROUTES FOR REGISTRY.JS
     // GET route for getting the registry list
     app.get("/api/registry", function (req, res) {
         db.project2
