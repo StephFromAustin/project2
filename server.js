@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended:false })); // parse application
 app.use(express.json()); // parse application/ json
 app.use(express.static("public")); // static directory 
 
-// ROUTES (will need later, gators)
+// ROUTES
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 

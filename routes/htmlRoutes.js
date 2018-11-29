@@ -1,6 +1,6 @@
 // Dependencies
 // =============================================================
-var path = require("path");
+let path = require("path");
 
 // Routes
 // =============================================================
@@ -17,9 +17,15 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/createEvent.html"));
   });
 
-  // blog route loads blog.html
+  app.get("/events", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/myEvents.html"));
+  });
+
   app.get("/signup", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
+  app.get("/about", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/aboutUs.html"));
+  });
 };
