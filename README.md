@@ -1,1 +1,3 @@
-# project2
+# ShinDig 
+
+### Meet the Team: Amanda 
