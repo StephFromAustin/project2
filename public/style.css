@@ -248,7 +248,7 @@ i.iconis {
 
 .section h1 {
   position: relative;
-  margin-top: -10px;
+  margin-top: -200px;
   display: inline-block;
   letter-spacing: 4px;
   margin-right: 600px;
@@ -307,4 +307,8 @@ i.iconis {
   .section h1 {
     margin: 20px 6px;
   }
+}
+
+.card {
+  border: none;
 }
