@@ -1,8 +1,10 @@
 // Dependencies
 const db = require('../models')
 
+
 // Routes
 module.exports = function (app) {
+
 
     //------------------GET ROUTES-----------------------
 
