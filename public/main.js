@@ -5,19 +5,10 @@ $(document).ready(function () {
   const right = document.querySelector(".right");
   const container = document.querySelector(".container2");
 
-<<<<<<< HEAD
 // PARALAX CODE TO HOME PAGE
 left.addEventListener("mouseenter", () => {
   container.classList.add("hover-left");
 });
-=======
-  // ScrollSpy
-  const ss = document.querySelectorAll('.scrollspy');
-  M.ScrollSpy.init(ss, {});
-  //sidenav
-  const sideNav = document.querySelector('.sidenav');
-  M.Sidenav.init(sideNav, {});
->>>>>>> 87b8a9209467287a354e7333d9f6612992e74b89
 
   //event listeners for mouse actions on elements
   left.addEventListener("mouseenter", () => {
