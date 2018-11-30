@@ -177,7 +177,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-image:url("https://images.unsplash.com/photo-1471967183320-ee018f6e114a?ixlib=rb-0.3.5&s=e3721997587c44f4c73fc3c1e3b18db9&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb"); 
+    background-image:url("https://images.unsplash.com/photo-1518757535402-49f315ea55f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=97221a5d92e76477b2b5f367f54abfbf&auto=format&fit=crop&w=1050&q=80"); 
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -198,7 +198,7 @@ body {
 .truncate >img {
 	width: 180px;
 	margin-top: 6px;
-	margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 footer .foot-text {

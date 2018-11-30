@@ -43,13 +43,36 @@
                             <a href="./createEvent.html">Create</a>
                         </li>
                         <li>
-                            <a href="#find">Find</a>
+                            <!-- Modal Trigger -->
+                            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
+
+                            <!-- Modal Structure -->
+                            <div id="modal1" class="modal bottom-sheet">
+                                <div class="modal-content">
+                                    <div class="row">
+                                        <div class="row">
+                                            <h4>Login</h4>
+                                            
+                                            <div class="input-field col s12">
+                                                <input id="email" type="email" class="validate">
+                                                <label for="email">Email</label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="password" type="password" class="validate">
+                                                <label for="password">Password</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close waves-effect waves-grey btn-flat">Login</a>
+                                </div>
+                            </div>
+                            <a href="#find">Login</a>
                         </li>
-                        <li>
-                            <!--signup button-->
-                            <button class="btn waves-effect waves-light grey" type="submit" name="action">Sign Up
-                                  </button>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -66,7 +89,35 @@
             <a href="./createEvent.html">Create</a>
         </li>
         <li>
-            <a href="#find">Find</a>
+             <!-- Modal Trigger -->
+             <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
+
+             <!-- Modal Structure -->
+             <div id="modal1" class="modal bottom-sheet">
+                 <div class="modal-content">
+                     <div class="row">
+                         <div class="row">
+                             <h4>Login</h4>
+                             
+                             <div class="input-field col s12">
+                                 <input id="email" type="email" class="validate">
+                                 <label for="email">Email</label>
+                             </div>
+                             <div class="input-field col s12">
+                                 <input id="password" type="password" class="validate">
+                                 <label for="password">Password</label>
+                             </div>
+                         </div>
+
+                     </div>
+
+                 </div>
+                 <div class="modal-footer">
+                     <a href="#!" class="modal-close waves-effect waves-grey btn-flat">Login</a>
+                 </div>
+             </div>
+            
+
         </li>
     </ul>
     <header class="slider">
@@ -77,7 +128,7 @@
             </div>
             <div class="split right">
                 <h1 class="demo">
-                    <p class="line-1 anim-typewriter">I need . . .</p>
+                    <p class="line-1 anim-typewriter">I Need . . .</p>
                 </h1>
                 <a href="#" class="button"> Find </a>
             </div>
@@ -93,12 +144,12 @@
             <div>
                 <i class="fas fa-hands-helping fa-3x"></i>
                 <h3>Helpful Tips</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
+                <p></p>
             </div>
             <div>
                 <i class="fas fa-building fa-3x"></i>
                 <h3>Hosting Facilities</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
+                <p></p>
             </div>
         </div>
     </section>
@@ -111,7 +162,9 @@
                     <i class=""></i>
                 </div>
                 <div>
-                    <h3>About Us</h3>
+                    <a href="aboutUs.html">
+                        <h3>About Us</h3>
+                    </a>
                 </div>
             </div>
         </div>
@@ -134,6 +187,17 @@
     <script src="main.js"></script>
     <!--Login Javascript file-->
     <script src="login.js"></script>
+    <script>
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, {});
+        });
+    </script>
+
+
 </body>
 
 </html>
