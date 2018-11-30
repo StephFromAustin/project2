@@ -136,6 +136,6 @@ $(document).ready(function () {
 $(".login-btn").on("click", signIn());
 $(".signUp-btn").on("click", signUp());
 $(".resetPass").on("click", passReset());
-
+console.log(current);
 module.exports = current;
 });
