@@ -1,5 +1,7 @@
 # ShinDig 
 
+## REPLACE WITH SLIDES 
+
 ## Meet the Team: Amanda Padilla, Javier Vega, Kang Park, Michael Wenhold, Stephanie Gonzales 
 
 ## Mission Statement: Our goal with ShinDig is to empower individuals to create, plan, and exectue any event at any size. Our application is the go to stop for both host and guests to assign tasks, save event information, and invite friends and family. 
