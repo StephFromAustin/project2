@@ -17,8 +17,6 @@ $(document).ready(function () {
     const user = firebase.auth().currentUser;
 
     //global variables
-    let currentUserEmail = '';
-    let currentuid = 0;
 
     //handles the sign in
     const signIn = () => {
@@ -49,7 +47,7 @@ $(document).ready(function () {
                 }
             });
         }
-    }
+    };
 
     //handles the sign up process
     const signUp = () => {
@@ -75,14 +73,14 @@ $(document).ready(function () {
             }
             emailVerif();
         });
-    }
+    };
     //sending out email to verify the user
     const emailVerif = () => {
         user.sendEmailVerification().then(function () {
             //this is where the user will be alerted that an email has been sent for them to verify
             alert("An e-mail has been sent to you for verification.")
         })
-    }
+    };
     // function to reset the password for the user
     const passReset = () => {
         let email = $(".email-input").val().trim();
@@ -105,31 +103,39 @@ $(document).ready(function () {
             }
             // else if (errorCode)
         })
-    }
+    };
     // Global observer of user sign in status
     auth.onAuthStateChanged(function (user) {
         if (user) {
             let emailVerified = user.emailVerified;
-            currentUserEmail = user.email;
-            currentuid = user.uid;
+            let currentUserEmail = user.email;
+            let currentuid = user.uid;
+            let currentUser = [currentUserEmail, currentuid, emailVerified];
+
+            return currentUser;
         } else {
             //user is signed out, redirect to the home page
             $(location).attr('href', '../index.html');
         }
-    })
+    });
 
-});
-
-
+    if(!currentUser[2]){
+        $(location).attr('href', '../index.html');
+    }else if(currentUser[0] == undefined || currentUser[1] == undefined){
+        alert("Please login before continuing to plan your next event!")
+    }else{
+        let current = currentUser
+        return current;
+    }
+//======================================================================================================================
 // Code for future development to let the user update their profile information
 
 //======================================================================================================================
 //On click button events
 //Firebase button events
-$(".login-btn").on("click", signIn);
-$(".signUp-btn").on("click", signUp);
-$(".resetPass").on("click", passReset);
+$(".login-btn").on("click", signIn());
+$(".signUp-btn").on("click", signUp());
+$(".resetPass").on("click", passReset());
 
-module.exports(currentuid, currentUserEmail);
-
-// testing for github
+module.exports = current;
+});
