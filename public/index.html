@@ -44,33 +44,28 @@
                         </li>
                         <li>
                             <!-- Modal Trigger -->
-                            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
-
+                            <a class="waves-effect btn modal-trigger waves-grey" href="#modal1">Login</a>
                             <!-- Modal Structure -->
-                            <div id="modal1" class="modal bottom-sheet">
+                            <div id="modal" class="modal top-sheet">
                                 <div class="modal-content">
                                     <div class="row">
-                                        <div class="row">
+                                        <div class="row center">
                                             <h4>Login</h4>
-                                            
-                                            <div class="input-field col s12">
+                                            <div class="input-field center">
                                                 <input id="email" type="email" class="validate">
                                                 <label for="email">Email</label>
                                             </div>
-                                            <div class="input-field col s12">
+                                            <div class="input-field">
                                                 <input id="password" type="password" class="validate">
                                                 <label for="password">Password</label>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                                 <div class="modal-footer">
-                                    <a href="#!" class="modal-close waves-effect waves-grey btn-flat">Login</a>
+                                    <a href="./signup.html" class="modal-close waves-effect waves-teal btn-flat">Login</a>
                                 </div>
                             </div>
-                            <a href="#find">Login</a>
                         </li>
 
                     </ul>
@@ -89,35 +84,30 @@
             <a href="./createEvent.html">Create</a>
         </li>
         <li>
-             <!-- Modal Trigger -->
-             <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
 
-             <!-- Modal Structure -->
-             <div id="modal1" class="modal bottom-sheet">
-                 <div class="modal-content">
-                     <div class="row">
-                         <div class="row">
-                             <h4>Login</h4>
-                             
-                             <div class="input-field col s12">
-                                 <input id="email" type="email" class="validate">
-                                 <label for="email">Email</label>
-                             </div>
-                             <div class="input-field col s12">
-                                 <input id="password" type="password" class="validate">
-                                 <label for="password">Password</label>
-                             </div>
-                         </div>
-
-                     </div>
-
-                 </div>
-                 <div class="modal-footer">
-                     <a href="#!" class="modal-close waves-effect waves-grey btn-flat">Login</a>
-                 </div>
-             </div>
-            
-
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                        <div class="row">
+                                <div class="row center">
+                                    <h4>Login</h4>
+                                    <div class="input-field center">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input id="password" type="password" class="validate">
+                                        <label for="password">Password</label>
+                                    </div>
+                                </div>
+                            </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Login</a>
+                  </div>
+                </div>
+             
         </li>
     </ul>
     <header class="slider">
@@ -133,26 +123,38 @@
                 <a href="#" class="button"> Find </a>
             </div>
     </header>
+    <section class=" section-follow blue-grey center">
+            <div class="container cemter">
+              <div class="row">
+                <div class="col s12">
+                  <h4>Why ShinDig?</h4>
+                  <h6>Party Planning Made Easy</h6>
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+   
     <!--Section for Events-->
-    <section class="services">
-        <div class="container grid-3 center">
-            <div>
-                <i class="fas fa-calendar fa-3x"></i>
-                <h3>Events Created</h3>
-                <p></p>
-            </div>
-            <div>
-                <i class="fas fa-hands-helping fa-3x"></i>
-                <h3>Helpful Tips</h3>
-                <p></p>
-            </div>
-            <div>
-                <i class="fas fa-building fa-3x"></i>
-                <h3>Hosting Facilities</h3>
-                <p></p>
+    <section>
+        <div class="parallax-container">
+            <div class="parallax"><img src="./images/img12.jpg"></div>
+        </div>
+        <div class="section white">
+            <div class="row container">
+              <h2 class="header"><img src="./images/shindig-initial-trans.png" height= "200" width="200"> </h2>
+              <p class="grey-text text-darken-3 lighten-3">ShinDig is here for all your party needs. Getting your favorite people to get togther hasn't been easier. Coordinate with your loved ones, and execute the perfect party.</p>
             </div>
         </div>
+          <div class="parallax-container">
+            <div class="parallax"><img src="./images/img11.jpg"></div>
+          </div>
     </section>
+    
+    
+   
 
     <!-- About -->
     <section class="about bg-light">
@@ -176,6 +178,9 @@
         <div class="container">
             © 2018 Copyright ShinDig
             <a class="grey-text text-lighten-4 right" href="#!"></a>
+            <a href="https://github.com/StephFromAustin/project2" class="white-text align-right">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
 
         </div>
     </footer>
@@ -194,7 +199,15 @@
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.modal');
             var instances = M.Modal.init(elems, {});
+            var sideModal = document.querySelectorAll("#modal1");
+
         });
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems, {});
+         });
+        
+      
     </script>
 
 
