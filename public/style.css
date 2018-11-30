@@ -1,8 +1,8 @@
 :root {
     --container2: ;
-    --left-bg-color: rgba(73, 73, 73, 0.432);
+   
     --left-button-hover-color: rgba(92, 92, 92, 0.3);
-    --right-bg-color: rgba(73, 73, 73, 0.432);
+   
     --right-button-hover-color: rgba(92, 92, 92, 0.3);
     --hover-width: 75%;
     --other-width: 25%;
@@ -308,9 +308,12 @@ i.iconis {
   }
 }
 
-.card {
-  border: none;
-}
+
+div.card-panel.border-0 {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+=======
+
 
 .footer2 {
   position: absolute;
