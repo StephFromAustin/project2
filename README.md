@@ -8,7 +8,7 @@
 
 ![Minimum Viable Product](screenshots/MVP.png)
 
-### ADD A DEMO!!!
+## Website:  https://shindig2018.herokuapp.com/index.html
 
 ![Main Page Website](screenshots/Main.png)
 
