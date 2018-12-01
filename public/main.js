@@ -26,12 +26,15 @@ left.addEventListener("mouseenter", () => {
   right.addEventListener("mouseleave", () => {
     container.classList.remove("hover-right");
   });
+// Code for modal to work
+$('.modal').modal();
+  
 //======================================================================================================================
 // Javascript for visualization when user first signs in
-const user = require("login.js");
+//const user = require("./login.js");
 
-let uid = user.currentuid;
-let email = user.currentUserEmail;
+//let uid = user.currentuid;
+//let email = user.currentUserEmail;
 
 
 //Javascript for visualization of data from the database
@@ -43,7 +46,7 @@ let eventName = $(".validate");
 let eventDate = $(".datepicker");
 
 //event listener for the button click
-$(document).on("click", ".createBtn", createEvent);
+//$(document).on("click", ".createBtn", createEvent);
 
 
 });
