@@ -28,6 +28,11 @@ left.addEventListener("mouseenter", () => {
   });
 // Code for modal to work
 $('.modal').modal();
+
+// Code for the side nav on smaller screens
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
   
 //======================================================================================================================
 // Javascript for visualization when user first signs in
