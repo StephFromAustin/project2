@@ -17,6 +17,8 @@ $(document).ready(function () {
     const user = firebase.auth().currentUser;
 
     //global variables
+    let currentUserEmail = '';
+    let currentuid = 0;
 
     //handles the sign in
     const signIn = () => {
@@ -47,7 +49,7 @@ $(document).ready(function () {
                 }
             });
         }
-    };
+    }
 
     //handles the sign up process
     const signUp = () => {
@@ -59,7 +61,7 @@ $(document).ready(function () {
             return;
         }
         if (password.length < 8 || password.match(/[A-z]/) || password.match(/[A-Z]/) || password.match(/\d/)) {
-            alert("Please enter a password longer than 8 characters, has at least 1 capital letter, and 1 number.");
+            alert("Please enter a password longer than 8 characters, has at least 1 capital letter, and 1 number.")
             return;
         }
         //creates a new user with an email and password
@@ -73,14 +75,14 @@ $(document).ready(function () {
             }
             emailVerif();
         });
-    };
+    }
     //sending out email to verify the user
     const emailVerif = () => {
         user.sendEmailVerification().then(function () {
             //this is where the user will be alerted that an email has been sent for them to verify
             alert("An e-mail has been sent to you for verification.")
         })
-    };
+    }
     // function to reset the password for the user
     const passReset = () => {
         let email = $(".email-input").val().trim();
@@ -100,42 +102,34 @@ $(document).ready(function () {
             } else {
                 alert(errorMsg);
                 return;
-            }
+            } 
             // else if (errorCode)
         })
-    };
+    }
     // Global observer of user sign in status
     auth.onAuthStateChanged(function (user) {
-        if (user) {
-            let emailVerified = user.emailVerified;
-            let currentUserEmail = user.email;
-            let currentuid = user.uid;
-            let currentUser = [currentUserEmail, currentuid, emailVerified];
+    if (user) {
+        let emailVerified = user.emailVerified;
+        currentUserEmail = user.email;
+        currentuid = user.uid;
+    } else {
+        //user is signed out, redirect to the home page
 
-            return currentUser;
-        } else {
-            //user is signed out, redirect to the home page
-            $(location).attr('href', '../index.html');
-        }
-    });
-
-    if(!currentUser[2]){
-        $(location).attr('href', '../index.html');
-    }else if(currentUser[0] == undefined || currentUser[1] == undefined){
-        alert("Please login before continuing to plan your next event!")
-    }else{
-        let current = currentUser
-        return current;
     }
-//======================================================================================================================
+})
+
+});
+    
+
 // Code for future development to let the user update their profile information
 
 //======================================================================================================================
 //On click button events
 //Firebase button events
-$(".login-btn").on("click", signIn());
-$(".signUp-btn").on("click", signUp());
-$(".resetPass").on("click", passReset());
-console.log(current);
-module.exports = current;
-});
+$(".login-btn").on("click", signIn);
+$(".signUp-btn").on("click", signUp);
+$(".resetPass").on("click", passReset);
+
+    module.exports(currentuid, currentUserEmail);
+
+// testing for github
