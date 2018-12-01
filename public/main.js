@@ -28,13 +28,12 @@ left.addEventListener("mouseenter", () => {
   });
 // Code for modal to work
 $('.modal').modal();
+
+// Code for the side nav on smaller screens
+  $('.sidenav').sidenav();
   
 //======================================================================================================================
 // Javascript for visualization when user first signs in
-const user = require("./login.js");
-
-let uid = user.currentuid;
-let email = user.currentUserEmail;
 
 
 //Javascript for visualization of data from the database
@@ -46,7 +45,6 @@ let eventName = $(".validate");
 let eventDate = $(".datepicker");
 
 //event listener for the button click
-$(document).on("click", ".createBtn", createEvent);
 
 
 });
