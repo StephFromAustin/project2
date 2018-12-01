@@ -30,8 +30,8 @@ left.addEventListener("mouseenter", () => {
 // Javascript for visualization when user first signs in
 const user = require("login.js");
 
-let uid = user.currentuid;
-let email = user.currentUserEmail;
+let uid = user[1];
+let email = user[0];
 
 
 //Javascript for visualization of data from the database
