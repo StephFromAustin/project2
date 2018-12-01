@@ -5,7 +5,6 @@ $(document).ready(function () {
   const right = document.querySelector(".right");
   const container = document.querySelector(".container2");
 
-  // PARALAX CODE TO HOME PAGE
   //event listeners for mouse actions on elements
   left.addEventListener("mouseenter", () => {
     container.classList.add("hover-left");
