@@ -5,12 +5,7 @@ $(document).ready(function () {
   const right = document.querySelector(".right");
   const container = document.querySelector(".container2");
 
-// PARALAX CODE TO HOME PAGE
-left.addEventListener("mouseenter", () => {
-  container.classList.add("hover-left");
-});
 
-  //event listeners for mouse actions on elements
   left.addEventListener("mouseenter", () => {
     container.classList.add("hover-left");
   });
@@ -26,24 +21,27 @@ left.addEventListener("mouseenter", () => {
   right.addEventListener("mouseleave", () => {
     container.classList.remove("hover-right");
   });
-//======================================================================================================================
-// Javascript for visualization when user first signs in
-const user = require("login.js");
+  // Code for modal to work
+  $('.modal').modal();
 
-let uid = user.currentuid;
-let email = user.currentUserEmail;
+  // Code for the side nav on smaller screens
+  $('.sidenav').sidenav();
 
+  //======================================================================================================================
+  // Javascript for visualization when user first signs in
 
-//Javascript for visualization of data from the database
-//======================================================================================================================
-// for creating an event from the create event page
-// the events name input
-let eventName = $(".validate");
-//the date picked for the event
-let eventDate = $(".datepicker");
+  //Javascript for visualization of data from the database
+  //======================================================================================================================
+  // for creating an event from the create event page
+  // the events name input
+  let eventName = $(".validate");
+  //the date picked for the event
+  let eventDate = $(".datepicker");
 
-//event listener for the button click
-$(document).on("click", ".createBtn", createEvent);
+  //event listener for the button click
+
 
 
 });
+// Code for modal to work
+$('.modal').modal();

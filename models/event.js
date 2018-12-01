@@ -6,6 +6,7 @@ module.exports = function (sequelize, Sequelize) {
                 isAlphanumeric: true,
             }
         },
+        //quantity of what?
         quantity: {
             type: Sequelize.INTEGER, 
             validate: {
