@@ -1,6 +1,6 @@
 # ShinDig 
 
-![Title Slide](project_2/project2/public/images/Title.png)
+![Title Slide](screenshots/Title.png)
 
-![Mission Statement](project_2/project2/public/images/Mission.png)
+![Mission Statement](screenshots/Mission.png)
 
