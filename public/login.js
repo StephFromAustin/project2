@@ -10,14 +10,11 @@ $(document).ready(function () {
         storageBucket: "shindig-104.appspot.com",
         messagingSenderId: "774972844187"
     };
+    //firebase.initializeApp(config);
 
     //Firebase authentication reference
     const auth = firebase.auth();
     const user = firebase.auth().currentUser;
-
-    //global variables
-    let currentUserEmail = '';
-    let currentuid = 0;
 
     //handles the sign in
     const signIn = () => {
@@ -106,22 +103,26 @@ $(document).ready(function () {
         })
     }
     // Global observer of user sign in status
-    auth.onAuthStateChanged(function (user) {
-        if (user) {
-            let emailVerified = user.emailVerified;
-            currentUserEmail = user.email;
-            currentuid = user.uid;
-        } else {
-            //user is signed out, redirect to the home page
-            $(location).attr('href', '../index.html');
+    const currentState = () => {
+        auth.onAuthStateChanged(function (user) {
+            if (user) {
+                let emailVerified = user.emailVerified;
+                currentUserEmail = user.email;
+                currentuid = user.uid;
+            } else {
+                //user is signed out, redirect to the home page
+                $(location).attr('href', '../index.html');
 
-        }
-    })
+            }
+        })
+    }
     // Code for future development to let the user update their profile information
 
     //======================================================================================================================
     //On click button events
     //Firebase button events
+    currentState();
+
     $(".login-btn").on("click", signIn());
     $(".signUp-btn").on("click", signUp());
     $(".resetPass").on("click", passReset());

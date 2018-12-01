@@ -10,7 +10,7 @@ module.exports = function (app) {
 
     // GET route for getting the registry list
     app.get("/api/registry", function (req, res) {
-        db.project2
+        db.registry
             .findAll({})
             .then(results => res.json(results));
     });
@@ -24,7 +24,7 @@ module.exports = function (app) {
 
     // GET route for getting the event list
     app.get("/api/main_event", function (req, res) {
-        db.project2
+        db.main_event
             .findAll({})
             .then(results => res.json(results));
     });
@@ -47,9 +47,16 @@ module.exports = function (app) {
 
     // POST route for saving the event list
     app.post("/api/main_event", function (req, res) {
-        db.project2
-            .create(req.body)
-            .then(results => res.json(results));
+        db.main_event
+            .create({
+                item: req.body.text,
+                quantity: 0
+            })
+            .then(function (event) {
+                res.json(results);
+            }).catch(function (err) {
+                res.json(err);
+            });
     });
 
     //---------------DELETE ROUTES-----------------------
