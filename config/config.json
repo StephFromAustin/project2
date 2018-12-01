@@ -8,6 +8,7 @@
     },
     "test": {
       "username": "root",
+      "password": "Steph2845",
       "password": null,
       "database": "database_test",
       "host": "127.0.0.1",
