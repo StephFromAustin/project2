@@ -6,8 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--JQuery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Materialize-->
@@ -31,7 +30,7 @@
             <div class="container">
                 <div class="nav-wrapper">
                     <a href="./index.html" class="brand-logo">ShinDig</a>
-                    <a href="#" data-target="mobile-nav" class="sidenav-trigger sidenav">
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
                         <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
@@ -86,30 +85,32 @@
             <a href="./createEvent.html">Create</a>
         </li>
         <li>
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
 
-                <!-- Modal Structure -->
-                <div id="modal1" class="modal">
-                  <div class="modal-content">
-                        <div class="row">
-                                <div class="row center">
-                                    <h4>Login</h4>
-                                    <div class="input-field center">
-                                        <input id="email-input" type="email" class="validate">
-                                        <label for="email">Email</label>
-                                    </div>
-                                    <div class="input-field">
-                                        <input id="password-input" type="password" class="validate">
-                                        <label for="password">Password</label>
-                                    </div>
-                                </div>
+            <a class="waves-effect waves-light btn modal-trigger" href="./signup.html">Login</a>
+
+            <!-- Modal Structure -->
+            <div class = "modal" id = "modal1">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="row center">
+                            <h4>Login</h4>
+                            <div class="input-field center">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
                             </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="./index.html" class="modal-close waves-effect waves-green btn-flat">Login</a>
-                  </div>
-                </div>
+                            <div class="input-field">
+                                <input id="password" type="password" class="validate">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                    </div>
              
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="modal-close waves-effect waves-green btn-flat">Login</a>
+                </div>
+            </div>
+
         </li>
     </ul>
     <header class="slider">
@@ -126,19 +127,19 @@
             </div>
     </header>
     <section class=" section-follow blue-grey center">
-            <div class="container cemter">
-              <div class="row">
+        <div class="container cemter">
+            <div class="row">
                 <div class="col s12">
-                  <h4>Why ShinDig?</h4>
-                  <h6>Party Planning Made Easy</h6>
-                  
-                  
-                  
+                    <h4>Why ShinDig?</h4>
+                    <h6>Party Planning Made Easy</h6>
+
+
+
                 </div>
-              </div>
             </div>
-          </section>
-   
+        </div>
+    </section>
+
     <!--Section for Events-->
     <section>
         <div class="parallax-container">
@@ -146,17 +147,19 @@
         </div>
         <div class="section white">
             <div class="row container">
-              <h2 class="header"><img src="./images/shindig-initial-trans.png" height= "200" width="200"> </h2>
-              <p class="grey-text text-darken-3 lighten-3">ShinDig is here for all your party needs. Getting your favorite people to get togther hasn't been easier. Coordinate with your loved ones, and execute the perfect party.</p>
+                <h2 class="header"><img src="./images/shindig-initial-trans.png" height="200" width="200"> </h2>
+                <p class="grey-text text-darken-3 lighten-3">ShinDig is here for all your party needs. Getting your
+                    favorite people to get together hasn't been easier. Coordinate with your loved ones, and execute the
+                    perfect party.</p>
             </div>
         </div>
-          <div class="parallax-container">
+        <div class="parallax-container">
             <div class="parallax"><img src="./images/img11.jpg"></div>
-          </div>
+        </div>
     </section>
-    
-    
-   
+
+
+
 
     <!-- About -->
     <section class="about bg-light">
@@ -165,7 +168,7 @@
                 <div class="center">
                     <i class=""></i>
                 </div>
-                <div class = "center"> 
+                <div class="center">
                     <a href="aboutUs.html">
                         <h3>About Us</h3>
                     </a>
@@ -181,19 +184,41 @@
             © 2018 Copyright ShinDig
             <a class="grey-text text-lighten-4 right" href="#!"></a>
             <a href="https://github.com/StephFromAustin/project2" class="white-text align-right">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
+                <i class="fab fa-github fa-2x"></i>
+            </a>
 
         </div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <!--Materialize Javascript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <!--Custom javascript-->
     <script src="main.js"></script>
     <!--Login Javascript file-->
     <script src="login.js"></script>
+    <script>
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, {});
+            
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var sideModal = document.querySelectorAll("#modal1");
+            var instances = M.Modal.init(sideModal, {});
+
+    });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems, {
+});
+        });
+    </script>
+
 
 </body>
 
