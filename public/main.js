@@ -45,7 +45,6 @@ let eventName = $(".validate");
 let eventDate = $(".datepicker");
 
 //event listener for the button click
-// $(document).on("click", ".createBtn", createEvent);
 
 
 });
