@@ -16,8 +16,6 @@ $(document).ready(function () {
     const auth = firbase.auth();
     const user = firebase.auth().currentUser;
 
-    //global variables
-
     //handles the sign in
     const signIn = () => {
         if (user) {
