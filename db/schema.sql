@@ -33,7 +33,6 @@ CREATE TABLE main_event (
 	event_date DATE NOT NULL,
 	event_time TIME NOT NULL,
 	PRIMARY KEY (id)
-	PRIMARY KEY (id)
 	);
 
 -- CRATES THE "USERS" TABLE -- 
