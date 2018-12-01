@@ -13,7 +13,7 @@ $(document).ready(function () {
     firebase.initializeApp(config);
 
     //Firebase authentication reference
-    const auth = firbase.auth();
+    const auth = firebase.auth();
     const user = firebase.auth().currentUser;
 
     //global variables
