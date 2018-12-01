@@ -59,7 +59,7 @@ $(document).ready(function () {
             return;
         }
         if (password.length < 8 || password.match(/[A-z]/) || password.match(/[A-Z]/) || password.match(/\d/)) {
-            alert("Please enter a password longer than 8 characters, has at least 1 capital letter, and 1 number.")
+            alert("Please enter a password longer than 8 characters, has at least 1 capital letter, and 1 number.");
             return;
         }
         //creates a new user with an email and password
