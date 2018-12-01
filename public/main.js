@@ -26,6 +26,7 @@ left.addEventListener("mouseenter", () => {
   right.addEventListener("mouseleave", () => {
     container.classList.remove("hover-right");
   });
+  
 //======================================================================================================================
 // Javascript for visualization when user first signs in
 const user = require("login.js");
