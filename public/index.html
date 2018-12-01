@@ -6,8 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--JQuery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Materialize-->
@@ -31,7 +30,7 @@
             <div class="container">
                 <div class="nav-wrapper">
                     <a href="./index.html" class="brand-logo">ShinDig</a>
-                    <a href="#" data-target="mobile-nav" class="sidenav-trigger sidenav">
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
                         <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
@@ -86,10 +85,10 @@
             <a href="./createEvent.html">Create</a>
         </li>
         <li>
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
+            <a class="waves-effect waves-light btn modal-trigger" href="./signup.html">Login</a>
 
             <!-- Modal Structure -->
-            <div id="modal1" class="modal">
+            <div class = "modal" id = "modal1">
                 <div class="modal-content">
                     <div class="row">
                         <div class="row center">
@@ -106,7 +105,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Login</a>
+                    <a href="#" class="modal-close waves-effect waves-green btn-flat">Login</a>
                 </div>
             </div>
 
@@ -189,14 +188,14 @@
         </div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <!--Materialize Javascript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <!--Custom javascript-->
     <script src="main.js"></script>
     <!--Login Javascript file-->
     <script src="login.js"></script>
-<<<<<<< HEAD
     <script>
         const sideNav = document.querySelector('.sidenav');
         M.Sidenav.init(sideNav, {});
@@ -213,12 +212,11 @@
     });
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.parallax');
-            var instances = M.Parallax.init(elems, {});
+            var instances = M.Parallax.init(elems, {
+});
         });
     </script>
 
-=======
->>>>>>> bc738dd84f013bc63f014d79b1c79395f8ccb297
 
 </body>
 
