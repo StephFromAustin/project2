@@ -183,6 +183,27 @@
 
                         <div class="modal-footer">
                             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+                            <script>
+                            const eventSubmit = $("#eventSubmit");
+                            eventSubmit.on("click", function (event){
+                                event.preventDefault();
+                                
+                                let checkBoxesArray = document.querySelectorAll("#wishlist")
+
+                                for(let i=0; i< checkBoxesArray.length; i++){
+                                    console.log(checkBoxesArray[i])
+                                }
+
+                                let newEvent = {
+                                    name: $("#first_name").val().trim(), 
+                                    
+                                }
+                            })
+                            
+                            
+                            
+                            </script>
+
                         </div>
                     </div>
                 </div>
