@@ -10,10 +10,10 @@ $(document).ready(function () {
         storageBucket: "shindig-104.appspot.com",
         messagingSenderId: "774972844187"
     };
-    firebase.initializeApp(config);
+    // firebase.initializeApp(config);
 
     //Firebase authentication reference
-    const auth = firbase.auth();
+    const auth = firebase.auth();
     const user = firebase.auth().currentUser;
 
     //global variables
