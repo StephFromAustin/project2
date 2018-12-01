@@ -10,7 +10,6 @@ $(document).ready(function () {
         storageBucket: "shindig-104.appspot.com",
         messagingSenderId: "774972844187"
     };
-    firebase.initializeApp(config);
 
     //Firebase authentication reference
     const auth = firebase.auth();
@@ -102,34 +101,30 @@ $(document).ready(function () {
             } else {
                 alert(errorMsg);
                 return;
-            } 
+            }
             // else if (errorCode)
         })
     }
     // Global observer of user sign in status
     auth.onAuthStateChanged(function (user) {
-    if (user) {
-        let emailVerified = user.emailVerified;
-        currentUserEmail = user.email;
-        currentuid = user.uid;
-    } else {
-        //user is signed out, redirect to the home page
+        if (user) {
+            let emailVerified = user.emailVerified;
+            currentUserEmail = user.email;
+            currentuid = user.uid;
+        } else {
+            //user is signed out, redirect to the home page
+            $(location).attr('href', '../index.html');
 
-    }
-})
+        }
+    })
+    // Code for future development to let the user update their profile information
 
+    //======================================================================================================================
+    //On click button events
+    //Firebase button events
+    $(".login-btn").on("click", signIn());
+    $(".signUp-btn").on("click", signUp());
+    $(".resetPass").on("click", passReset());
+
+    console.log("is this being read?");
 });
-    
-
-// Code for future development to let the user update their profile information
-
-//======================================================================================================================
-//On click button events
-//Firebase button events
-$(".login-btn").on("click", signIn);
-$(".signUp-btn").on("click", signUp);
-$(".resetPass").on("click", passReset);
-
-    module.exports(currentuid, currentUserEmail);
-
-// testing for github
